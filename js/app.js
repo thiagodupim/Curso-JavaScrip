@@ -1,7 +1,25 @@
 console.log(
-    document.getElementById("fruta").innerHTML
+    document.getElementsByTagName("div")
 )
 
 console.log(
-    document.getElementsByClassName("carro") // [0] se quiser pegar o elemento pelo indice
+    document.getElementsByTagName("br")
+)
+
+console.log(
+    document.querySelector("div")
+)
+
+// Caso queira pegar pela classe específica
+console.log(
+    document.querySelector(".div2")
+)
+
+console.log(
+    document.querySelector("p")
+)
+
+// Caso queira pegar pelo id específico
+console.log(
+    document.querySelector("#p2")
 )
