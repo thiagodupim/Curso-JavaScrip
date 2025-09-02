@@ -1,25 +1,13 @@
 console.log(
-    document.getElementsByTagName("div")
+    document.querySelectorAll(".times")
 )
 
+// Pegar apenas o times do futebol europeu
 console.log(
-    document.getElementsByTagName("br")
+    document.getElementById("futebol-europeu").querySelectorAll(".times")
 )
 
+// Pegar apenas um time específico do futebol europeu
 console.log(
-    document.querySelector("div")
-)
-
-// Caso queira pegar pela classe específica
-console.log(
-    document.querySelector(".div2")
-)
-
-console.log(
-    document.querySelector("p")
-)
-
-// Caso queira pegar pelo id específico
-console.log(
-    document.querySelector("#p2")
+    document.getElementById("futebol-europeu").querySelectorAll(".times")[0].innerHTML
 )
