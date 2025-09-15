@@ -1,11 +1,12 @@
-var imagem = document.createElement("img")
-imagem.src = "js.png"
+var p = document.createElement("p")
+p.innerHTML = "Olá pessoal!"
 
-var paragrafo = document.createElement("p")
-paragrafo.innerHTML = "Olá pessoal!"
+var img = document.createElement("img")
+img.src = "html.jpg"
 
-console.log(
-    document.createElement("div"),
-    imagem,
-    paragrafo
-)
+// Inserindo um elemento filho ao elemento pai
+document.getElementById("conteudo").appendChild(p)
+document.getElementById("conteudo").appendChild(img)
+
+// Removendo o elemento filho
+document.getElementById("conteudo").removeChild(img)
