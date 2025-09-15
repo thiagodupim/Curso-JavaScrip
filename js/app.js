@@ -1,12 +1,11 @@
-var paragrafo = document.getElementById("p1")
+var imagem = document.createElement("img")
+imagem.src = "js.png"
 
-paragrafo.innerHTML = "Novo conteúdo"
+var paragrafo = document.createElement("p")
+paragrafo.innerHTML = "Olá pessoal!"
 
-paragrafo.style.color = "red"
-paragrafo.style.backgroundColor = "#333"
-paragrafo.style.height = "400px"
-
-var imagem = document.getElementById("imagem")
-imagem.src = "html.jpg"
-imagem.alt = "Teste de imagem"
-imagem.width = "30"
+console.log(
+    document.createElement("div"),
+    imagem,
+    paragrafo
+)
