@@ -1,13 +1,12 @@
-console.log(
-    document.querySelectorAll(".times")
-)
+var paragrafo = document.getElementById("p1")
 
-// Pegar apenas o times do futebol europeu
-console.log(
-    document.getElementById("futebol-europeu").querySelectorAll(".times")
-)
+paragrafo.innerHTML = "Novo conteúdo"
 
-// Pegar apenas um time específico do futebol europeu
-console.log(
-    document.getElementById("futebol-europeu").querySelectorAll(".times")[0].innerHTML
-)
+paragrafo.style.color = "red"
+paragrafo.style.backgroundColor = "#333"
+paragrafo.style.height = "400px"
+
+var imagem = document.getElementById("imagem")
+imagem.src = "html.jpg"
+imagem.alt = "Teste de imagem"
+imagem.width = "30"
