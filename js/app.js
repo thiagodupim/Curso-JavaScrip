@@ -1,12 +1,19 @@
-var p = document.createElement("p")
-p.innerHTML = "Olá pessoal!"
+console.log(
+    // Retorna os nós filhos de um nó (body no caso).
+    document.body.childNodes
+)
 
-var img = document.createElement("img")
-img.src = "html.jpg"
+var lista = document.body.childNodes
+alert(lista.length)
+alert(lista[5].innerHTML) 
 
-// Inserindo um elemento filho ao elemento pai
-document.getElementById("conteudo").appendChild(p)
-document.getElementById("conteudo").appendChild(img)
+// Retorna o nome do nó.
+alert(lista[5].nodeName)
 
-// Removendo o elemento filho
-document.getElementById("conteudo").removeChild(img)
+// Retorna o tipo do nó. Sempre irá retorna 1, 2, 3 ou 8.
+alert(lista[1].nodeType)
+
+alert(lista[1].nodeValue)
+
+// Retorna os nós de um outro nó
+alert(lista[5].childNodes[3].childNodes[0].nodeValue)
