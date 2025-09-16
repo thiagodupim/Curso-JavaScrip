@@ -10,5 +10,16 @@ var novoItem = document.createElement("li")
 novoItem.textContent = "Suco de laranja"
 lista.insertBefore(novoItem, itens[2]) // Escolher em qual indice será inserido
 
+
+var lista2 = document.getElementsByTagName("ul")[1]
+var itens2 = lista2.children
+var novoItem2 = document.createElement("li")
+novoItem2.textContent = "Margarina"
+
+// Trocando item da lista por um novo
+lista2.replaceChild(novoItem2, itens2[2])
+
+
 console.log(lista)
 console.log(itens)
+console.log(lista2)
