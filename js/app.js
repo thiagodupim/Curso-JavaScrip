@@ -1,26 +1,18 @@
-// Tipos de dados
+// Variáveis
+// Escopo global, escopo local
+// var (escopo glibal), let (dentro do bloco), const (variáveis com valor fixo)
 
-// string
-var nome = "Thiago Dupim Aguilar"
+var nome = "Thiago"
 
-// number
-var idade = 25 // Os números podem ser escritos com ou sem decimais
+if (true) {
+    nome = "Kleuber"
+}
 
-// boolean
-var solteiro = true
+console.log(nome)
 
-// array
-var frutas = ["goiaba", "maça", "banana"]
+if (true) {
+    // let só é considerado no escopo local
+    let nome2 = "Marcos"
 
-// object
-var carro = new Object()
-carro.fabricacao = "2025"
-carro.cor = "azul"
-
-// function
-var soma = function(a,b) {return a+b}
-
-alert(typeof(carro))
-alert(carro.fabricacao)
-alert(soma(6,7))
-alert(typeof(soma(6,7)))
+    console.log(nome2)
+}
