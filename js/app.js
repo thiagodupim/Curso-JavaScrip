@@ -1,8 +1,14 @@
-// Inserindo um texto
-var titulo = document.querySelector("h1")
-var texto = document.createTextNode("Um texto qualquer")
+var lista = document.getElementsByTagName("ul")[0]
 
-titulo.appendChild(texto)
+// Pegando os elementos filhos da lista
+var itens = lista.children
 
-// Desta maneira também conseguimos
-titulo.textContent = "Um novo texto"
+// Criando novo item
+var novoItem = document.createElement("li")
+
+//Inserindo conteúdo no novo item
+novoItem.textContent = "Suco de laranja"
+lista.insertBefore(novoItem, itens[2]) // Escolher em qual indice será inserido
+
+console.log(lista)
+console.log(itens)
