@@ -1,18 +1,14 @@
-// Variáveis
-// Escopo global, escopo local
-// var (escopo glibal), let (dentro do bloco), const (variáveis com valor fixo)
+// Array 
+// É uma estrutura de dados que armazena uma coleção de elementos
 
-var nome = "Thiago"
-
-if (true) {
-    nome = "Kleuber"
-}
-
-console.log(nome)
-
-if (true) {
-    // let só é considerado no escopo local
-    let nome2 = "Marcos"
-
-    console.log(nome2)
-}
+let meuarray = [
+    'notebook', 
+    1500.00, 
+    {memoria: '16gb', hd: '100gb'},
+    ['notebook dell', 'modelo G15']
+]
+console.log(meuarray[0])
+console.log(meuarray.length)
+console.log(meuarray[2].memoria)
+console.log(meuarray[2].hd)
+console.log(meuarray[3][0])
