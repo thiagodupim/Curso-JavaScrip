@@ -1,25 +1,26 @@
-var lista = document.getElementsByTagName("ul")[0]
+// Tipos de dados
 
-// Pegando os elementos filhos da lista
-var itens = lista.children
+// string
+var nome = "Thiago Dupim Aguilar"
 
-// Criando novo item
-var novoItem = document.createElement("li")
+// number
+var idade = 25 // Os números podem ser escritos com ou sem decimais
 
-//Inserindo conteúdo no novo item
-novoItem.textContent = "Suco de laranja"
-lista.insertBefore(novoItem, itens[2]) // Escolher em qual indice será inserido
+// boolean
+var solteiro = true
 
+// array
+var frutas = ["goiaba", "maça", "banana"]
 
-var lista2 = document.getElementsByTagName("ul")[1]
-var itens2 = lista2.children
-var novoItem2 = document.createElement("li")
-novoItem2.textContent = "Margarina"
+// object
+var carro = new Object()
+carro.fabricacao = "2025"
+carro.cor = "azul"
 
-// Trocando item da lista por um novo
-lista2.replaceChild(novoItem2, itens2[2])
+// function
+var soma = function(a,b) {return a+b}
 
-
-console.log(lista)
-console.log(itens)
-console.log(lista2)
+alert(typeof(carro))
+alert(carro.fabricacao)
+alert(soma(6,7))
+alert(typeof(soma(6,7)))
