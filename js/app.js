@@ -1,14 +1,39 @@
-// Array 
-// É uma estrutura de dados que armazena uma coleção de elementos
+// Objeto
+/* 
+    Um objeto é uma coleção de propriedade e uma 
+    propriedade é uma associação entre um nome (ou chave)
+    e um valor. Um valor de uma propriedade pode ser uma função,
+    que é então considerada um método do objeto.
+*/
 
-let meuarray = [
-    'notebook', 
-    1500.00, 
-    {memoria: '16gb', hd: '100gb'},
-    ['notebook dell', 'modelo G15']
-]
-console.log(meuarray[0])
-console.log(meuarray.length)
-console.log(meuarray[2].memoria)
-console.log(meuarray[2].hd)
-console.log(meuarray[3][0])
+let pessoa = {
+    nome: "Thiago",
+    idade: 25,
+    feliz: true,
+    pets: ["cachorro", "cavalo"],
+    carros: {
+        hrv: {
+            placa: "1234567",
+            cor: "azul"
+        },
+        amarok: {
+            placa: "7654321",
+            cor: "vermelho"
+        }
+    },
+    andar: function(km){
+        alert(pessoa.nome+" andou "+km+" km")
+    }
+}
+
+// Chamando o método
+pessoa.andar(20)
+
+// Alterando valores do objeto
+pessoa.nome = "Dirceu"
+pessoa.pets[0] = "Passarinho"
+
+console.log(pessoa)
+console.log(pessoa.pets[0])
+console.log(pessoa.carros.hrv.cor)
+console.log(pessoa.carros.amarok.placa)
