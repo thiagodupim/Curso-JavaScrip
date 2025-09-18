@@ -3,24 +3,21 @@
     Atribuição
 */
 
-let x = 10
-let y = 5
-let resultado = x - y
-let multiplicacao = x * y
-let divisao = x / y
-let exponenciacao = x**y
-let resto = x % y
+let x = 5
+let y = 2
+let j = 10
 
-// Precedencias
-let n1 = 8
-let n2 = 7
-let n3 = 6
-let precedencia = (n1 + n2 + n3) / 3
+// x = x + y
+// x -= y
+// x *= y
+// x/= y
+// x **= y
+// x %= y
+x += y
 
-console.log(x + y)
-console.log(resultado)
-console.log(multiplicacao)
-console.log(divisao)
-console.log(exponenciacao)
-console.log(resto)
-console.log(precedencia)
+// Incremento e decremento
+j++
+// j--
+
+console.log(x)
+console.log(j)
