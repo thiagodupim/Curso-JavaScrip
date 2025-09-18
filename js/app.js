@@ -1,40 +1,29 @@
-/* Operadores: 
-    Lógicos
-    Comparação
-    Operador ternário
+/* Condicionais: 
+    if
+    else
+    elseif
+    switch
 */
 
-let x = 5
+let pais = "brasil"
+let estado = "mg"
 
-let media = 8
-let frequencia = 80
+if (pais == "brasil") {
+    console.log("Sou brasileiro!")
+} else if (estado == "mg") {
+    console.log("Sou mineiro!")
+} else {
+    console.log("Sou gringo!")
+}
 
-let idade = 16
-
-// Operador ternário
-let eleitor = (idade >= 16) ? "Pode votar" : "Não pode votar"
-let eleitorNot = (!idade <= 15) ? "Pode votar" : "Não pode votar"
-
-// Verificando se x é igual a 5
-console.log(x == 5)
-console.log(x != 4)
-console.log(x != "5")
-
-// Verificando o tipo de dado
-console.log(x === "5")
-console.log(x !== "5")
-
-// Maior que... Menor que
-console.log(x > 2)
-console.log(x < 2)
-
-// Maior ou igual... menor ou igual
-console.log(x >= 5)
-console.log(x <= 2)
-
-// Operadores lógicos - média
-console.log(media >= 7 && frequencia >= 70)
-console.log(media >= 7 || frequencia >= 50)
-
-console.log(eleitor)
-console.log(eleitorNot)
+switch (pais) {
+    case 'brasil':
+        console.log("Sim, Brasil!")
+        break
+    case 'canada':
+        console.log("Opa, Canadá")
+        break
+    default:
+        console.log("Padrão")
+        break
+}
