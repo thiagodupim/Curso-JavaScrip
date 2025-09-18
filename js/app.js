@@ -1,39 +1,26 @@
-// Objeto
-/* 
-    Um objeto é uma coleção de propriedade e uma 
-    propriedade é uma associação entre um nome (ou chave)
-    e um valor. Um valor de uma propriedade pode ser uma função,
-    que é então considerada um método do objeto.
+/* Operadores
+    Aritméticos
+    Atribuição
 */
 
-let pessoa = {
-    nome: "Thiago",
-    idade: 25,
-    feliz: true,
-    pets: ["cachorro", "cavalo"],
-    carros: {
-        hrv: {
-            placa: "1234567",
-            cor: "azul"
-        },
-        amarok: {
-            placa: "7654321",
-            cor: "vermelho"
-        }
-    },
-    andar: function(km){
-        alert(pessoa.nome+" andou "+km+" km")
-    }
-}
+let x = 10
+let y = 5
+let resultado = x - y
+let multiplicacao = x * y
+let divisao = x / y
+let exponenciacao = x**y
+let resto = x % y
 
-// Chamando o método
-pessoa.andar(20)
+// Precedencias
+let n1 = 8
+let n2 = 7
+let n3 = 6
+let precedencia = (n1 + n2 + n3) / 3
 
-// Alterando valores do objeto
-pessoa.nome = "Dirceu"
-pessoa.pets[0] = "Passarinho"
-
-console.log(pessoa)
-console.log(pessoa.pets[0])
-console.log(pessoa.carros.hrv.cor)
-console.log(pessoa.carros.amarok.placa)
+console.log(x + y)
+console.log(resultado)
+console.log(multiplicacao)
+console.log(divisao)
+console.log(exponenciacao)
+console.log(resto)
+console.log(precedencia)
