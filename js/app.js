@@ -1,29 +1,15 @@
-/* Condicionais: 
-    if
-    else
-    elseif
-    switch
+/* loops: 
+    for in
+    for of
 */
 
-let pais = "brasil"
-let estado = "mg"
+let peca = {nome: "filtro", preco: 15.69, unidade: 25}
+let aparelhos = ["computador", "Impressora", "Mouse", "Teclado"]
 
-if (pais == "brasil") {
-    console.log("Sou brasileiro!")
-} else if (estado == "mg") {
-    console.log("Sou mineiro!")
-} else {
-    console.log("Sou gringo!")
+for (let valor in peca) {
+    console.log(peca[valor])
 }
 
-switch (pais) {
-    case 'brasil':
-        console.log("Sim, Brasil!")
-        break
-    case 'canada':
-        console.log("Opa, Canadá")
-        break
-    default:
-        console.log("Padrão")
-        break
+for (let valor of aparelhos) {
+    console.log(valor)
 }
