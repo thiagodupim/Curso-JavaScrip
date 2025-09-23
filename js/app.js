@@ -1,15 +1,17 @@
-/* loops: 
-    for in
-    for of
+/* 
+   Functions
 */
 
-let peca = {nome: "filtro", preco: 15.69, unidade: 25}
-let aparelhos = ["computador", "Impressora", "Mouse", "Teclado"]
-
-for (let valor in peca) {
-    console.log(peca[valor])
+function exibirAlert() {
+    alert("Funcionou!")
 }
 
-for (let valor of aparelhos) {
-    console.log(valor)
+exibirAlert()
+
+function soma(x, y) {
+    return x + y
 }
+
+// console.log(soma(4, 6))
+
+document.getElementById("resultado").innerHTML = soma(7, 5)
